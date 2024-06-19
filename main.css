@@ -172,6 +172,189 @@
   margin-left: inherit;
 }
 
+.news-container {
+  position: relative;
+  width: 100%;
+  height: 1070px;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f2f2;
+  top: 248px;
+}
+
+.description-of-company-news-container {
+  position: relative;
+  width: 1296px;
+}
+
+.header-and-jump-button {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  top: 100px;
+  margin-left: 41px;
+}
+
+.header-company-news-container {
+  width: 85%;
+  height: 56px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+.all-news-button {
+  width: 150px;
+  height: 39px;
+  gap: 15px;
+  background: url("./img/Group 47 (1).png") no-repeat;
+  background-position: right 0px top 40%;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.news-card-container {
+  position: relative;
+  width: 700px;
+  display: flex;
+  gap: 50px;
+  top: 247px;
+  border-radius: 20px;
+}
+
+.newsletter {
+  position: relative;
+  width: 400px;
+  height: 259px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-date {
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22.4px;
+  margin-top: 24px;
+}
+
+.text-news {
+  position: relative;
+  margin-top: 24px;
+}
+
+.header-news {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26.4px;
+}
+
+.description-news {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 26px;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: rgb(61, 52, 139);
+  top: 248px;
+  justify-content: center;
+}
+
+.description-footer {
+  position: relative;
+  width: 1296px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-and-phone-number {
+  background-color: rgb(61, 52, 139);
+  height: 110px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.addres {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 56px;
+  color: white;
+}
+
+.logo-white {
+  display: flex;
+}
+
+.info-about-the-legal-entity-procurement-shareholders-about-the-company {
+  background-color: rgb(61, 52, 139);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 59px;
+}
+
+.header-legal-entity,
+.header-procurement,
+.header-shareholders,
+.header-about-the-company {
+  position: relative;
+  width: 306px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 22.4px;
+  color: white;
+  margin-top: 10px;
+}
+
+.text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.4px;
+  color: white;
+  margin-top: 24px;
+}
+
+text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.4px;
+  color: white;
+  margin-top: 24px;
+}
+
+.procurement,
+.shareholders,
+.about-the-company {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   width: 100%;
   position: relative;
