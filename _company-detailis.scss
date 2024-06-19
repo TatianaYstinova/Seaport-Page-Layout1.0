@@ -1,0 +1,93 @@
+$main-fill-color: #fff;
+
+.company-information-and-rate-request-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:$main-fill-color;
+    margin-top: 222px;
+   
+}
+.company-description-and-rate-request-and-video{
+    position: relative;
+    width: 1296px;
+    height: 100%;
+    display: flex;
+}
+.text-of-company-container{
+    position: relative;
+    width: 50%;
+    height: 562px;
+    display: flex;
+    flex-direction: column;
+}
+.header-text-of-company-container{
+    height: 56px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color:$color-service-font;
+}
+.info-text-company-description{
+    margin-top: 60px;
+
+}
+.subtitle{
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color:$color-service-font;
+    padding: 10px;
+}
+
+.numbering{
+   padding: 16px;
+}
+.video-and-rate-request-container{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.video-container{
+    position: relative;
+    margin-top: 53px;
+    display: flex;
+    margin-left: auto;
+}
+.rate-request-container{
+    position: relative;
+    width: 600px;
+    height: 170px;
+    background-color:rgba(93, 183, 222, 1);
+    margin-left: 48px;
+    top: 60px;
+    border-radius: 20px;
+
+}
+.rate-request-header{
+    height: 18px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18.2px;
+    color:$main-fill-color;
+    padding: 36px;
+    display: flex;
+    justify-content: center;
+    
+}
+.rate-request-description{
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26.6px;
+    color:$main-fill-color;
+    display: flex;
+    justify-content: center;
+    margin-left: inherit;
+   
+}
