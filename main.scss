@@ -50,7 +50,7 @@ body {
     align-items: center;
     white-space: nowrap;
 }
-a{
+.enumeration-menu-navigation{
     font-family: $main-font;
     font-weight: 400;
     font-size: 16px;
@@ -58,7 +58,7 @@ a{
     text-decoration:none;
     color:$main-color-text;
 }
-a:hover{
+.enumeration-menu-navigation:hover{
     background-color: darken($color: #09dddd8a, $amount: 30%);
 }
 .input-with-icon {
