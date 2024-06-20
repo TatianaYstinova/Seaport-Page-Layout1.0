@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница калькулятора</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class='info-container'>
+        <img class="logo" src="./img/Vectorlogo.png" alt="picture-logo" />
+        <div class="menu-navigation">
+            <a class="enumeration-menu-navigation" href="" >О компании</a>
+            <a class="enumeration-menu-navigation" href="" >Типы услуг</a>
+            <a class="enumeration-menu-navigation"href="" >Для клиентов</a>
+            <a class="enumeration-menu-navigation"href="" >Новости</a>
+            <a class="enumeration-menu-navigation"href="" >О компании</a>
+        </div>
+        <input type="text" class="input-with-icon" />
+        <section>
+            <select class="language">
+                <option value="1">RU</option>
+                <option value="2">ENG</option>
+            </select>
+        </section>
+    </div>
+    <div class="jump-link-container">
+        <div class="enumeration-jump-link-container">
+            <div class="enumeration-jump-link">
+                <a class="link" href="">Главная</a>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png"/>
+                <a class="link" href="">Клиентам</a>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png"/>
+                <a class="link" href="">Запрос ставки и условий погрузочно-разгрузочных работ</a>
+            </div>
+        </div>
+    </div>
+    <div class="requisition-form-container">
+        <div class="requisition-form">
+            <div class="header-requisition-form-container">
+                <div class="header-requisition-form">Запрос ставки и условий погрузочно-разгрузочных работ</div>
+            </div>
+            <div class="data-entry-form">
+                <div class="form-field">
+                    <div class="header-form">Наименование груза * </div>
+                    <input type="text"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Размер партии * </div>
+                    <input type="text"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Единицы измерения * </div>
+                    <input type="text" class="input-icon"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Направление перевозки * </div>
+                    <input type="text" class="input-icon"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Пункт назначения перевозки </div>
+                    <input type="text"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Период поступления груза к перевалке</div>
+                    <input type="text" class="input-icon"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Груз поступает в порт</div>
+                    <input type="text" class="input-icon"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Груз отправляется из порта</div>
+                    <input type="text" class="input-icon"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Размер судовой партии</div>
+                    <input type="text"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Опасность груза(класс)</div>
+                    <input type="text"/>
+                </div>
+                <div class="form-field input-title">
+                    <div class="header-form ">Дополнительная информация о грузе:</div>
+                    <input class="input-title" type="text"/>
+                </div>
+                <div class="form-field">
+                    <div class="header-form">Прикрепить файл </div>
+                    <a class="select-a-file" href="">Выберите файл</a>
+                </div>
+            </div>
+            <div class="additional-application-information">
+                <div class="header-additional-application">Просим сообщить:</div>
+                <div class="enumeration-additional-application-information">
+                    <div class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="header-form">Ставку Прр</div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="header-form">Срок технологического накопления груза</div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="header-form">Ставку хранения груза сверх срока технологического накопления</div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="header-form">Возможность приемв и первалки груза в указанные сроки</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

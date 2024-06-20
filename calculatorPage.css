@@ -1,0 +1,160 @@
+body {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1296px) {
+  body {
+    width: 50%;
+  }
+}
+
+.jump-link-container {
+  position: relative;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(163, 223, 223);
+  align-items: center;
+}
+
+.enumeration-jump-link-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  left: 285px;
+}
+
+.enumeration-jump-link {
+  position: relative;
+  width: 677px;
+  gap: 15px;
+  height: 18px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.2px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+}
+
+.requisition-form-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+}
+
+.requisition-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-requisition-form-container {
+  position: relative;
+  width: 856px;
+  height: 112px;
+  display: flex;
+}
+
+.header-requisition-form {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  color: rgb(51, 51, 51);
+}
+
+.data-entry-form {
+  position: relative;
+  width: 856px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: 59px;
+}
+
+.form-field {
+  position: relative;
+  width: 416px;
+  height: 73px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-form {
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.2px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+}
+
+.input-icon {
+  background: url("./img/input-icon.png") no-repeat;
+  background-position: right 0px top 50%;
+  gap: 20px;
+}
+
+.input-title {
+  height: 100px;
+}
+
+.select-a-file {
+  position: relative;
+  width: 143px;
+  height: 34px;
+  padding: 8px 16px;
+  background-color: rgb(93, 183, 222);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.additional-application-information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 114px;
+  width: 856px;
+}
+
+.header-additional-application {
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 37, 8px;
+  color: rgb(51, 51, 51);
+}
+
+.enumeration-additional-application-information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 36px;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=calculatorPage.css.map */
