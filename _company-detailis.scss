@@ -68,7 +68,9 @@ $main-fill-color: #fff;
    left: 123px;
     top: 60px;
     border-radius: 20px;
-
+}
+.rate-request-container:hover{
+    background-color: darken($color: #09dddd8a, $amount: 30%);
 }
 .rate-request-header{
     height: 18px;

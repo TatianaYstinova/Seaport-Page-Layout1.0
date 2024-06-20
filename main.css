@@ -151,6 +151,10 @@
   border-radius: 20px;
 }
 
+.rate-request-container:hover {
+  background-color: rgba(3, 74, 74, 0.5411764706);
+}
+
 .rate-request-header {
   height: 18px;
   font-family: "PT Sans", sans-serif;
