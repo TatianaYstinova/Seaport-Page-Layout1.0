@@ -280,7 +280,7 @@
   width: 100%;
   display: flex;
   background-color: rgb(61, 52, 139);
-  top: 248px;
+  top: 445px;
   justify-content: center;
 }
 
@@ -378,7 +378,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0px;
 }
 
 .logo {

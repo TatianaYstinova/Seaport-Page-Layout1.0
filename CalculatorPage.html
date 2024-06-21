@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,16 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <div class='info-container'>
         <img class="logo" src="./img/Vectorlogo.png" alt="picture-logo" />
         <div class="menu-navigation">
-            <a class="enumeration-menu-navigation" href="" >О компании</a>
-            <a class="enumeration-menu-navigation" href="" >Типы услуг</a>
-            <a class="enumeration-menu-navigation"href="" >Для клиентов</a>
-            <a class="enumeration-menu-navigation"href="" >Новости</a>
-            <a class="enumeration-menu-navigation"href="" >О компании</a>
+            <a class="enumeration-menu-navigation" href="">О компании</a>
+            <a class="enumeration-menu-navigation" href="">Типы услуг</a>
+            <a class="enumeration-menu-navigation" href="">Для клиентов</a>
+            <a class="enumeration-menu-navigation" href="">Новости</a>
+            <a class="enumeration-menu-navigation" href="">О компании</a>
         </div>
         <input type="text" class="input-with-icon" />
         <section>
@@ -33,62 +35,97 @@
         <div class="enumeration-jump-link-container">
             <div class="enumeration-jump-link">
                 <a class="link" href="">Главная</a>
-                <img class="link" src="./img/material-symbols_arrow-left-rounded.png"/>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png" />
                 <a class="link" href="">Клиентам</a>
-                <img class="link" src="./img/material-symbols_arrow-left-rounded.png"/>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png" />
+                <a class="link" href="">Запрос ставки и условий погрузочно-разгрузочных работ</a>
+                <a class="link" href="">Главная</a>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png" />
+                <a class="link" href="">Клиентам</a>
+                <img class="link" src="./img/material-symbols_arrow-left-rounded.png" />
                 <a class="link" href="">Запрос ставки и условий погрузочно-разгрузочных работ</a>
             </div>
         </div>
     </div>
     <div class="requisition-form-container">
         <div class="requisition-form">
-            <div class="header-requisition-form-container">
                 <div class="header-requisition-form">Запрос ставки и условий погрузочно-разгрузочных работ</div>
-            </div>
             <div class="data-entry-form">
                 <div class="form-field">
                     <div class="header-form">Наименование груза * </div>
-                    <input type="text"/>
+                    <input class="input-data-entry-form" type="text" />
                 </div>
                 <div class="form-field">
                     <div class="header-form">Размер партии * </div>
-                    <input type="text"/>
+                    <input  class="input-data-entry-form"  type="text" />
                 </div>
                 <div class="form-field">
                     <div class="header-form">Единицы измерения * </div>
-                    <input type="text" class="input-icon"/>
+                        <section>
+                            <select class="drop-down-list">
+                                <option value="" selected disabled hidden></option>
+                                <option value="1">см</option>
+                                <option value="2">м</option>
+                            </select>
+                        </section>
                 </div>
                 <div class="form-field">
                     <div class="header-form">Направление перевозки * </div>
-                    <input type="text" class="input-icon"/>
+                    <section>
+                        <select class="drop-down-list">
+                            <option value="" selected disabled hidden></option>
+                            <option value="1">Москва</option>
+                            <option value="2">Зажопинск</option>
+                        </select>
+                    </section>
                 </div>
                 <div class="form-field">
                     <div class="header-form">Пункт назначения перевозки </div>
-                    <input type="text"/>
+                    <input  class="input-data-entry-form" type="text" />
                 </div>
                 <div class="form-field">
                     <div class="header-form">Период поступления груза к перевалке</div>
-                    <input type="text" class="input-icon"/>
+                    <section>
+                        <select class="drop-down-list">
+                            <option value="" selected disabled hidden></option>
+                            <option value="1">сегодня</option>
+                            <option value="2">завтра</option>
+                        </select>
+                    </section>
                 </div>
                 <div class="form-field">
                     <div class="header-form">Груз поступает в порт</div>
-                    <input type="text" class="input-icon"/>
+                    <section>
+                        <select class="drop-down-list">
+                            <option value="" selected disabled hidden></option>
+                            <option value="1">сегодня</option>
+                            <option value="2">завтра</option>
+                            <option value="3">посмотрим....</option>
+                        </select>
+                    </section>
                 </div>
                 <div class="form-field">
                     <div class="header-form">Груз отправляется из порта</div>
-                    <input type="text" class="input-icon"/>
+                    <section>
+                        <select class="drop-down-list" >
+                            <option value="" selected disabled hidden></option>
+                            <option value="1">сегодня</option>
+                            <option value="2">завтра</option>
+                            <option value="3">посмотрим....</option>
+                        </select>
+                    </section>
                 </div>
                 <div class="form-field">
                     <div class="header-form">Размер судовой партии</div>
-                    <input type="text"/>
+                    <input class="input-data-entry-form" type="text" />
                 </div>
                 <div class="form-field">
                     <div class="header-form">Опасность груза(класс)</div>
-                    <input type="text"/>
+                    <input class="input-data-entry-form" type="text" />
                 </div>
                 <div class="form-field input-title">
                     <div class="header-form ">Дополнительная информация о грузе:</div>
-                    <input class="input-title" type="text"/>
+                    <input class="input-title" type="text" />
                 </div>
                 <div class="form-field">
                     <div class="header-form">Прикрепить файл </div>
@@ -99,26 +136,98 @@
                 <div class="header-additional-application">Просим сообщить:</div>
                 <div class="enumeration-additional-application-information">
                     <div class="checkbox">
-                        <input type="checkbox"/>
+                        <input  class="checkbox-input" type="checkbox" />
                         <div class="header-form">Ставку Прр</div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox"/>
+                        <input class="checkbox-input" type="checkbox" />
                         <div class="header-form">Срок технологического накопления груза</div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox"/>
+                        <input  class="checkbox-input" type="checkbox" />
                         <div class="header-form">Ставку хранения груза сверх срока технологического накопления</div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox"/>
+                        <input  class="checkbox-input" type="checkbox" />
                         <div class="header-form">Возможность приемв и первалки груза в указанные сроки</div>
                     </div>
-                    
                 </div>
+            </div>
+            <div class="feedback">
+                <div class="header-feedback">Информация для обратной связи :</div>
+                <div class="data-entry-form">
+                    <div class="form-field">
+                        <div class="header-form">Имя,Фамилия</div>
+                        <input id ="nameInput" class="input-data-entry-form" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <div class="header-form">Название компании *</div>
+                        <input class="input-data-entry-form" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <div class="header-form">Номер телефона/факса</div>
+                        <input class="input-data-entry-form" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <div class="header-form">Адрес эл.почты *</div>
+                        <input class="input-data-entry-form" type="text" />
+                    </div>
+                </di>
+                <button class="send-data">Отправить</button>
             </div>
         </div>
     </div>
+</div>
+<div class="footer-container">
+            <div class="description-footer">
+                <div class="address-and-phone-number">
+                    <div class="addres">
+                        <img src="./img/carbon_location-filled.png"/>
+                        <div class="text-addres">123456, г. Тавима, ул. Морская, д. 21</div>
+                    </div>
+                    <img class="logo-white" src="./img/Vector.png" alt="picture-logo" />
+                    <img class="" src="./img/Frame 68.png"/>
+                </div>
+                <div class="info-about-the-legal-entity-procurement-shareholders-about-the-company">
+                        <div class="legal-entity-information">
+                            <div class="header-legal-entity">информация о юр. лице</div>
+                            <div class="text">ОГРН 1111111111111111</div>
+                            <div class="text">ИНН 222222222222</div>
+                            <div class="text">КПП 3333333333</div>
+                            <div class="text">ОКПО 4444444444</div>
+                            <div class="text">ОКТМО 2222222222222222</div>
+                        </div>
+                        <div class="procurement">
+                            <div class="header-procurement">Закупки</div>
+                            <a href="" class="text">Нормативные документы</a>
+                            <a href="" class="text">Закупки на VISMA Order</a>
+                            <a href="" class="text">Закупки на VISMA Tender</a>
+                        </div>
+                        <div class="shareholders">
+                            <div class="header-shareholders">Акционерам</div>
+                            <a href="" class="text"> Устав VISMA</a>
+                            <a href="" class="text">Свидетельства госрегистрации</a>
+                            <a href="" class="text">Список аффилированных лиц</a>
+                            <a href="" class="text">Информация</a>
+                            <a href="" class="text">Отчеты</a>
+                        </div>
+                        <div class="about-the-company">
+                            <div class="header-about-the-company">Акционерам</div>
+                            <a href="" class="text">Порт сегодня</a>
+                            <a href="" class="text">Характеристики порта</a>
+                            <a href="" class="text">История</a>
+                            <a href="" class="text">Дипломы и награды</a>
+                            <a href="" class="text">Транспортная безопасность</a>
+                            <a href="" class="text">Экология</a>
+                            <a href="" class="text">Правовая информация</a>
+                        </div>
+                </div>
+            </div>
+     </div>
+       
     
+    <script src="./validate.js"></script>
+
 </body>
+
 </html>

@@ -27,8 +27,9 @@ body {
     position: relative;
     width: 100%;
     display: flex;
-    left: 285px;
-
+    left: 192px;
+    justify-content: flex-start;
+    white-space:pre;
 }
 .enumeration-jump-link{
     position: relative;
@@ -36,7 +37,6 @@ body {
     gap:15px;
     height: 18px;
     display: flex;
-    
 }
 .link{
     text-decoration: none;
@@ -56,24 +56,20 @@ body {
     top:100px;
 }
 .requisition-form
-{
-    position: relative;
+{   position: relative;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
-.header-requisition-form-container{
-    position: relative;
-    width: 856px;
-    height: 112px;
-    display: flex;
-   
-}
+
 .header-requisition-form{
+    width: 856px;
     font-family: $main-font;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
     color:$main-color-text;
+    text-align: center;
 }
 .data-entry-form{
     position: relative;
@@ -102,10 +98,20 @@ body {
     color:$main-color-text;
     text-transform:uppercase;
 }
-.input-icon{
+.input-data-entry-form{
+    width: 416px;
+    height: 35px;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.drop-down-list{
+    width: 416px;
+    height: 35px;
+    border-width: thin;
     background: url('./img/input-icon.png') no-repeat;
-    background-position: right 0px top 50%;
-    gap: 20px;
+    background-position: right 7px top 50%;
+    appearance: none;
 }
 
 .input-title{
@@ -120,7 +126,15 @@ body {
     background-color:rgba(93, 183, 222, 1);
     border-radius: 20px;
     text-decoration: none;
+    color:$main-fill-color;
+    align-content: center;
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 13px;
+    line-height:18,2px;
 }
+
 .additional-application-information{
     position: relative;
     display: flex;
@@ -128,7 +142,8 @@ body {
     top: 114px;
     width:856px;
 }
-.header-additional-application{
+.header-additional-application,
+.header-feedback{
     position: relative;
     font-family: $main-font;
     font-weight: 700;
@@ -148,4 +163,41 @@ body {
     position: relative;
     display: flex;
     gap: 10px;
+    
+}
+.checkbox-input{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.feedback{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    width:856px;
+}
+.data-entry-form-feedback{
+    position: relative;
+    width:416px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    top: 59px;
+}
+.send-data{
+    width: 114px;
+    gap: 15px;
+    background: url("./img/Group 47 (1).png") no-repeat;
+    background-position: right 0px top 40%;
+    border: none;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    color:rgba(61, 52, 139, 1);
+    height: 38px;
 }
