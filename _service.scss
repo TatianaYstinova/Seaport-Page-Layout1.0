@@ -9,16 +9,17 @@ $main-fill-color: #fff;
     display: flex;
     justify-content: center;
     background-color:$main-fill-color;
-    margin-top: 130px;
+    padding: 150px 0;
+
 }
 .description-services-and-service-cards-container{
     position: relative;
     width: 1296px;
-    height: 750px;
+    height: 717px;
     display: flex;
 }
 .info-text-service-container{
-    width: 370px;
+    width: 306px;
     height: 333px;
     display: flex;
     flex-direction: column;
@@ -52,14 +53,15 @@ $main-fill-color: #fff;
     background-repeat: no-repeat;
 }
 .types-services-container-big{
-    width: 636px;
+    width: 856px;
+    height: 717px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-left:84px;
+    left: 134px;
 }
 .frame-content-big-container{
     position: relative;

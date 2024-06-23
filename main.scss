@@ -20,9 +20,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (max-width: 1296px){
-        width: 50%;
-    }
+}
+@media (width: 400px){
+    body{
+        width:100%;
+    } 
 }
 
 .info-container {
@@ -33,6 +35,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .logo {
     position: relative;
@@ -105,7 +109,8 @@ body {
 
 .info-text-container {
     position: relative;
-    width: 660px;
+    width: 526px;
+    height: 336px;
     margin-top: 180px;
     display: flex;
     flex-direction: column;
@@ -166,6 +171,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    left:134px;
    
 }
 
