@@ -10,9 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (max-width: 1296px){
-        width: 50%;
-    }
+    
 }
 .jump-link-container{
     position: relative;

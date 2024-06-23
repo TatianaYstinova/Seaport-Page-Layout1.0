@@ -295,7 +295,6 @@
   width: 100%;
   display: flex;
   background-color: rgb(61, 52, 139);
-  top: 445px;
   justify-content: center;
 }
 
@@ -371,45 +370,74 @@
   flex-direction: column;
 }
 
-body {
-  width: 100%;
-  position: relative;
-  margin: 0;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (width: 400px) {
+@media (width <= 900px) {
   body {
+    overflow: hidden;
+    margin: 0;
+  }
+  .info-container {
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
+  .info-container .logo {
+    width: 107px;
+    height: 33px;
+    left: 62px;
+  }
+  .info-container .logo .burger-menu {
+    position: absolute;
+    left: 190px;
+  }
+  .info-container .logo .burger-menu-900 {
+    position: absolute;
+    left: 810px;
+  }
+  .icon-burger-menu {
+    width: 30px;
+    height: 30px;
+  }
+  .menu-navigation {
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    transform: translateX(100%);
+    transform: translateX(0);
+    transition: all 0.6s ease;
+  }
 }
-.info-container {
-  position: relative;
-  width: 1296px;
-  height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (width > 900px) {
+  body {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-container {
+    padding: 40px 0;
+    gap: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger-menu-button {
+    display: none !important;
+  }
+  .menu-navigation {
+    position: relative;
+    gap: 20px;
+  }
 }
-
 .logo {
   position: relative;
-  width: 108px;
-  height: 30px;
 }
 
 .menu-navigation {
-  position: relative;
-  width: 613px;
-  height: 22px;
-  gap: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  white-space: nowrap;
 }
 
 .enumeration-menu-navigation {
@@ -419,6 +447,7 @@ body {
   line-height: 22.4px;
   text-decoration: none;
   color: rgb(51, 51, 51);
+  cursor: pointer;
 }
 
 .enumeration-menu-navigation:hover {
@@ -448,124 +477,4 @@ body {
   background-image: url("./img/material-symbols_keyboard-arrow-down-rounded.png");
   background-repeat: no-repeat;
   background-position: right 0px top 50%;
-}
-
-.first-screen-container {
-  position: relative;
-  width: 100%;
-  height: 750px;
-  background-repeat: no-repeat;
-  background-image: url("./img/Rectangle 23.png");
-  display: flex;
-  justify-content: center;
-  background-size: 100% 100%;
-}
-
-.text-of-company-and-types-of-services-container {
-  position: relative;
-  width: 1296px;
-  height: 100%;
-  display: flex;
-}
-
-.info-text-container {
-  position: relative;
-  width: 526px;
-  height: 336px;
-  margin-top: 180px;
-  display: flex;
-  flex-direction: column;
-}
-
-.header-text {
-  width: 526px;
-  height: 140px;
-  color: rgb(255, 255, 255);
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 70px;
-}
-
-.subheading-text {
-  width: 322px;
-  height: 66px;
-  color: rgb(255, 255, 255);
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22.4px;
-  margin-top: 30px;
-}
-
-.about-company-button {
-  background-image: url("./img/Group 7.png");
-  width: 159px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: right 0px top 45%;
-  background-color: rgba(28, 28, 28, 0);
-  margin-top: 40px;
-}
-
-.about-company-button:hover {
-  background-color: rgba(3, 74, 74, 0.5411764706);
-}
-
-.text-of-button {
-  width: 114px;
-  height: 22px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22.4px;
-  background-color: rgba(245, 231, 231, 0);
-  border: none;
-  color: rgb(255, 255, 255);
-}
-
-.types-services-container {
-  width: 636px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  left: 134px;
-}
-
-.frame-content {
-  position: relative;
-  width: 306px;
-  height: 250px;
-  border-radius: 20px;
-  background-color: rgb(93, 183, 222);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.shipment {
-  border-radius: inherit;
-  height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.text-of-frame-content {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 26.6px;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgb(33, 31, 31);
-  text-align: center;
-  width: 100%;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
 }/*# sourceMappingURL=main.css.map */
