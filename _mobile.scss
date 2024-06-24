@@ -6,7 +6,6 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 
 @media (width <= 900px){
     body {
-      overflow: hidden;
       margin: 0;
     }
     .apex{
@@ -86,11 +85,31 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
       font-family: "PT Sans", sans-serif;
       font-weight: 700;
       color: rgb(255, 255, 255);
-      
       text-align: center;
       width: 100%;
       border-bottom-left-radius: inherit;
       border-bottom-right-radius: inherit;
+    }
+    .service-description-container{
+      display: flex;
+    }
+    .info-text-service-container{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .title-service{ 
+      width: 70%;
+    }
+    .frame-title-service-container{
+      flex-direction: column;
+    }
+    .types-services-container-big{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
     }
   }
   
@@ -122,7 +141,6 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     }
     .first-screen-container{
       height: 750px;
-     
       display: flex;
       justify-content: center;
     }
@@ -152,7 +170,6 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     .types-services-container {
       flex-direction: column;
       justify-content: center;
-      
       gap: 20px;
       left:134px;
       justify-content: center; 
@@ -167,11 +184,38 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
       font-size: 19px;
       line-height: 26.6px;
       position:absolute;
-      
       transform: translateX(-50%);
-      
-
     }
+    .service-description-container{
+      display: flex;
+      justify-content: center;
+      background-color:$main-fill-color;
+    }
+    .frame-title-service-container{
+      align-items: center; 
+    }
+    .info-text-service-container{
+      width: 306px;
+      height: 333px;
+      display: flex;
+      flex-direction: column;
+    }
+    .description-services-and-service-cards-container{
+      
+      display: flex;
+  }
+    .types-services-container-big{
+      width: 856px;
+      height: 717px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      left: 134px;
+    }
+   
     
 
 }

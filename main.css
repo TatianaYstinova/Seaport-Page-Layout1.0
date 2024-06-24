@@ -2,22 +2,15 @@
 .service-description-container {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
   padding: 150px 0;
 }
 
 .description-services-and-service-cards-container {
   position: relative;
   width: 1296px;
-  height: 717px;
-  display: flex;
 }
 
 .info-text-service-container {
-  width: 306px;
-  height: 333px;
   display: flex;
   flex-direction: column;
 }
@@ -33,11 +26,9 @@
 }
 
 .frame-title-service-container {
-  width: 100%;
-  height: 217px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 17px 0;
 }
 
 .title-service {
@@ -52,18 +43,6 @@
   background-color: rgba(127, 255, 212, 0);
   background-position: right 0px top 40%;
   background-repeat: no-repeat;
-}
-
-.types-services-container-big {
-  width: 856px;
-  height: 717px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  left: 134px;
 }
 
 .frame-content-big-container {
@@ -372,7 +351,6 @@
 
 @media (width <= 900px) {
   body {
-    overflow: hidden;
     margin: 0;
   }
   .apex {
@@ -453,6 +431,26 @@
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
+  .service-description-container {
+    display: flex;
+  }
+  .info-text-service-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-service {
+    width: 70%;
+  }
+  .frame-title-service-container {
+    flex-direction: column;
+  }
+  .types-services-container-big {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 @media (width > 900px) {
   body {
@@ -523,6 +521,34 @@
     line-height: 26.6px;
     position: absolute;
     transform: translateX(-50%);
+  }
+  .service-description-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .frame-title-service-container {
+    align-items: center;
+  }
+  .info-text-service-container {
+    width: 306px;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+  }
+  .description-services-and-service-cards-container {
+    display: flex;
+  }
+  .types-services-container-big {
+    width: 856px;
+    height: 717px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    left: 134px;
   }
 }
 .apex {

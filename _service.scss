@@ -6,21 +6,15 @@ $main-fill-color: #fff;
 .service-description-container{
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color:$main-fill-color;
     padding: 150px 0;
 
 }
 .description-services-and-service-cards-container{
     position: relative;
     width: 1296px;
-    height: 717px;
-    display: flex;
+    
 }
 .info-text-service-container{
-    width: 306px;
-    height: 333px;
     display: flex;
     flex-direction: column;
 }
@@ -34,11 +28,9 @@ $main-fill-color: #fff;
     color:$color-service-font;
 }
 .frame-title-service-container{
-    width: 100%;
-    height: 217px;
-    display: flex; // Используем Flexbox для контейнера
-    justify-content: space-between; // Распределяем содержимое по горизонтали
-    align-items: center; // Выравниваем содержимое по вертикали  
+    display: flex;
+    justify-content: space-between; 
+    padding: 17px 0;
 }
 .title-service{
     color:$font-color-of-service-description;
@@ -52,17 +44,7 @@ $main-fill-color: #fff;
     background-position:right 0px top 40%;;
     background-repeat: no-repeat;
 }
-.types-services-container-big{
-    width: 856px;
-    height: 717px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    left: 134px;
-}
+
 .frame-content-big-container{
     position: relative;
     width:416px;
