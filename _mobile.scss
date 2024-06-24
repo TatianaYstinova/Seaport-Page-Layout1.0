@@ -1,35 +1,39 @@
+$font-color-of-pictures: rgba(255, 255, 255, 1);
+
+
+
+
+
 @media (width <= 900px){
     body {
-        overflow: hidden;
-        margin: 0;
+      overflow: hidden;
+      margin: 0;
+    }
+    .apex{
+      width: 100%;
+      height: 275px;
     }
     .info-container {
-        position: relative;
-        top: 40px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    
-        .logo {
-          width: 107px;
-          height: 33px;
-          left: 62px;
-    
-          .burger-menu {
-            position: absolute;
-            left: 190px;
-          }
-          .burger-menu-900 {
-            position: absolute;
-            left: 810px;
-          }
-        }
-      }
-      .icon-burger-menu{
-        width: 30px;
-        height: 30px;
-      }
-      .menu-navigation{
+      position: relative;
+      top: 40px;
+      display: flex;
+      justify-content:space-around;
+      width: 100%;
+    }
+    .logo {
+      width: 107px;
+      height: 33px;
+    }
+
+    .icon-burger-menu{
+       width: 30px;
+       height: 30px;
+       background: transparent;
+       border: none;
+       position: relative;
+       right: 27px;
+    }
+    .menu-navigation{
         flex-direction: column;
         position: absolute;
         top: 52px;
@@ -37,31 +41,138 @@
         transform: translateX(100%);
         transform: translateX(0);
         transition: all .6s ease;
-      }
-}
+    }
+    .first-screen-container{
+      overflow: hidden;
+      display: flex;
+    }
+    .background{
+      height: 1374px;
+      width: 1000px;
+    }
     
-@media (width > 900px){
-  body {
-    position: relative;
-    background-color: $main-fill-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .info-text-container{
+      position: relative;
+      top: 140px;
+      
+    }
+    .header-text {
+      left: 10px;
+      width: 40px;
+    }
+    .subheading-text{
+      position: relative;
+      top: 164px;
+      left: 6px;
+      width: 313px;
+    }
+    .about-company-button {
+      position: relative;
+      top:183px;
+    }
+    .types-services-container{
+      position: relative;
+      top: 128px;
+      flex-direction: column;
+     
+    }
+    .frame-content {
+      margin: 10px; 
+      width: 262px;
+      height: 162px;
+      top: 218px;
+    }
+    .text-of-frame-content {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      
+      text-align: center;
+      width: 100%;
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
   }
-  .info-container {
-    padding: 40px 0;
-    gap:113px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-  .burger-menu-button {
-    display: none !important;
-  }
-  .menu-navigation {
-    position: relative;
-    gap:20px;
-  }
+  
+  @media (width > 900px){
+    body {
+      position: relative;
+      background-color: $main-fill-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .info-container {
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      width: 1296px;
+    }
+    .burger-menu-button {
+      display: none !important;
+    }
+    .menu-navigation {
+      position: relative;
+      gap:75px;
+    }
+    .burger-menu-900 {
+      position: absolute;
+      left: 810px;
+    }
+    .first-screen-container{
+      height: 750px;
+     
+      display: flex;
+      justify-content: center;
+    }
+    .background{
+      height: 750px;
+
+    }
+    .text-of-company-and-types-of-services-container{
+      display: flex;
+      justify-content: center;
+    }
+    .info-text-container {
+      height: 336px;
+      margin-top: 180px;
+      left:125px;
+    }
+     .header-text {
+      width: 526px;
+    }
+    .subheading-text{
+      margin-top: 30px;
+      width: 322px;
+    }
+    .about-company-button{
+      margin-top: 40px;
+    }
+    .types-services-container {
+      flex-direction: column;
+      justify-content: center;
+      
+      gap: 20px;
+      left:134px;
+      justify-content: center; 
+     
+    }
+    .frame-content{
+      width: 306px;
+      height: 250px;
+      
+    }
+    .text-of-frame-content{
+      font-size: 19px;
+      line-height: 26.6px;
+      position:absolute;
+      
+      transform: translateX(-50%);
+      
+
+    }
+    
 
 }
 

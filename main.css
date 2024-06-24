@@ -375,29 +375,28 @@
     overflow: hidden;
     margin: 0;
   }
+  .apex {
+    width: 100%;
+    height: 275px;
+  }
   .info-container {
     position: relative;
     top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
-  .info-container .logo {
+  .logo {
     width: 107px;
     height: 33px;
-    left: 62px;
-  }
-  .info-container .logo .burger-menu {
-    position: absolute;
-    left: 190px;
-  }
-  .info-container .logo .burger-menu-900 {
-    position: absolute;
-    left: 810px;
   }
   .icon-burger-menu {
     width: 30px;
     height: 30px;
+    background: transparent;
+    border: none;
+    position: relative;
+    right: 27px;
   }
   .menu-navigation {
     flex-direction: column;
@@ -407,6 +406,52 @@
     transform: translateX(100%);
     transform: translateX(0);
     transition: all 0.6s ease;
+  }
+  .first-screen-container {
+    overflow: hidden;
+    display: flex;
+  }
+  .background {
+    height: 1374px;
+    width: 1000px;
+  }
+  .info-text-container {
+    position: relative;
+    top: 140px;
+  }
+  .header-text {
+    left: 10px;
+    width: 40px;
+  }
+  .subheading-text {
+    position: relative;
+    top: 164px;
+    left: 6px;
+    width: 313px;
+  }
+  .about-company-button {
+    position: relative;
+    top: 183px;
+  }
+  .types-services-container {
+    position: relative;
+    top: 128px;
+    flex-direction: column;
+  }
+  .frame-content {
+    margin: 10px;
+    width: 262px;
+    height: 162px;
+    top: 218px;
+  }
+  .text-of-frame-content {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
   }
 }
 @media (width > 900px) {
@@ -419,19 +464,72 @@
   }
   .info-container {
     padding: 40px 0;
-    gap: 113px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1296px;
   }
   .burger-menu-button {
     display: none !important;
   }
   .menu-navigation {
     position: relative;
+    gap: 75px;
+  }
+  .burger-menu-900 {
+    position: absolute;
+    left: 810px;
+  }
+  .first-screen-container {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+  }
+  .background {
+    height: 750px;
+  }
+  .text-of-company-and-types-of-services-container {
+    display: flex;
+    justify-content: center;
+  }
+  .info-text-container {
+    height: 336px;
+    margin-top: 180px;
+    left: 125px;
+  }
+  .header-text {
+    width: 526px;
+  }
+  .subheading-text {
+    margin-top: 30px;
+    width: 322px;
+  }
+  .about-company-button {
+    margin-top: 40px;
+  }
+  .types-services-container {
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
+    left: 134px;
+    justify-content: center;
+  }
+  .frame-content {
+    width: 306px;
+    height: 250px;
+  }
+  .text-of-frame-content {
+    font-size: 19px;
+    line-height: 26.6px;
+    position: absolute;
+    transform: translateX(-50%);
   }
 }
+.apex {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   position: relative;
 }
@@ -448,6 +546,7 @@
   text-decoration: none;
   color: rgb(51, 51, 51);
   cursor: pointer;
+  text-wrap: nowrap;
 }
 
 .enumeration-menu-navigation:hover {
@@ -477,4 +576,106 @@
   background-image: url("./img/material-symbols_keyboard-arrow-down-rounded.png");
   background-repeat: no-repeat;
   background-position: right 0px top 50%;
+}
+
+.first-screen-container {
+  position: relative;
+  width: 100%;
+}
+
+.background {
+  background-repeat: no-repeat;
+}
+
+.text-of-company-and-types-of-services-container {
+  position: absolute;
+  width: 1296px;
+  height: 100%;
+}
+
+.info-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  position: relative;
+  height: 140px;
+  color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.subheading-text {
+  height: 66px;
+  color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.about-company-button {
+  background-image: url("./img/Group 7.png");
+  width: 159px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right 15px top 45%;
+  background-color: rgba(28, 28, 28, 0);
+  cursor: pointer;
+}
+
+.about-company-button:hover {
+  background-color: rgba(3, 74, 74, 0.5411764706);
+}
+
+.text-of-button {
+  width: 114px;
+  height: 22px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+  background-color: rgba(245, 231, 231, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.types-services-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.frame-content {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgb(93, 183, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shipment {
+  border-radius: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-of-frame-content {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  background: rgb(33, 31, 31);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }/*# sourceMappingURL=main.css.map */

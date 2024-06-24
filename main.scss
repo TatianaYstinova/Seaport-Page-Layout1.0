@@ -12,6 +12,10 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 $main-font: "PT Sans", sans-serif;
 $fram-color-service: rgba(93, 183, 222, 1);
 
+.apex{
+    display: flex;
+    justify-content: center;
+}
 .logo {
     position: relative;
 }
@@ -26,6 +30,7 @@ $fram-color-service: rgba(93, 183, 222, 1);
     text-decoration:none;
     color:$main-color-text;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 .enumeration-menu-navigation:hover{
     background-color: darken($color: #09dddd8a, $amount: 30%);
@@ -53,4 +58,101 @@ $fram-color-service: rgba(93, 183, 222, 1);
     background-image: url("./img/material-symbols_keyboard-arrow-down-rounded.png");
     background-repeat: no-repeat;
     background-position: right 0px top 50%;
+}
+.first-screen-container {
+    position: relative;
+    width: 100%;
+    
+}
+.background{
+    background-repeat: no-repeat;
+}
+
+.text-of-company-and-types-of-services-container {
+    position: absolute;
+    width: 1296px;
+    height: 100%;
+}
+.info-text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    position: relative;
+    height: 140px;
+    color: $font-color-of-pictures;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.subheading-text {
+    
+    height: 66px;
+    color: $font-color-of-pictures;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.about-company-button {
+    background-image: url('./img/Group\ 7.png');
+    width: 159px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: right 15px top 45%;
+    background-color: rgba(28, 28, 28, 0);
+    cursor: pointer;
+}
+.about-company-button:hover{
+    background-color: darken($color: #09dddd8a, $amount: 30%);
+}
+
+.text-of-button {
+    width: 114px;
+    height: 22px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    background-color: rgb(245 231 231 / 0%);
+    border: none;
+    color:$font-color-of-pictures;
+}
+
+.types-services-container {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.frame-content {
+    position: relative;
+    border-radius: 20px;
+    background-color: $fram-color-service;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.shipment{
+    border-radius: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.text-of-frame-content{
+    font-family: $main-font;
+    font-weight: 700;
+    color: $font-color-of-pictures;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    background: rgb(33, 31, 31);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
