@@ -12,29 +12,34 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 $main-font: "PT Sans", sans-serif;
 $fram-color-service: rgba(93, 183, 222, 1);
 
-.apex{
+.apex {
     display: flex;
     justify-content: center;
 }
+
 .logo {
     position: relative;
 }
+
 .menu-navigation {
     display: flex;
 }
-.enumeration-menu-navigation{
+
+.enumeration-menu-navigation {
     font-family: $main-font;
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
-    text-decoration:none;
-    color:$main-color-text;
+    text-decoration: none;
+    color: $main-color-text;
     cursor: pointer;
     text-wrap: nowrap;
 }
-.enumeration-menu-navigation:hover{
+
+.enumeration-menu-navigation:hover {
     background-color: darken($color: #09dddd8a, $amount: 30%);
 }
+
 .input-with-icon {
     background: url('./img/ic_round-search.png') no-repeat;
     width: 194px;
@@ -59,12 +64,14 @@ $fram-color-service: rgba(93, 183, 222, 1);
     background-repeat: no-repeat;
     background-position: right 0px top 50%;
 }
+
 .first-screen-container {
     position: relative;
     width: 100%;
-    
+
 }
-.background{
+
+.background {
     background-repeat: no-repeat;
 }
 
@@ -73,6 +80,7 @@ $fram-color-service: rgba(93, 183, 222, 1);
     width: 1296px;
     height: 100%;
 }
+
 .info-text-container {
     width: 50%;
     display: flex;
@@ -90,7 +98,7 @@ $fram-color-service: rgba(93, 183, 222, 1);
 }
 
 .subheading-text {
-    
+
     height: 66px;
     color: $font-color-of-pictures;
     font-family: $main-font;
@@ -108,7 +116,8 @@ $fram-color-service: rgba(93, 183, 222, 1);
     background-color: rgba(28, 28, 28, 0);
     cursor: pointer;
 }
-.about-company-button:hover{
+
+.about-company-button:hover {
     background-color: darken($color: #09dddd8a, $amount: 30%);
 }
 
@@ -121,11 +130,11 @@ $fram-color-service: rgba(93, 183, 222, 1);
     line-height: 22.4px;
     background-color: rgb(245 231 231 / 0%);
     border: none;
-    color:$font-color-of-pictures;
+    color: $font-color-of-pictures;
 }
 
 .types-services-container {
-    width:50%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -137,14 +146,16 @@ $fram-color-service: rgba(93, 183, 222, 1);
     background-color: $fram-color-service;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.shipment{
+
+.shipment {
     border-radius: inherit;
     height: inherit;
     object-fit: cover;
 }
-.text-of-frame-content{
+
+.text-of-frame-content {
     font-family: $main-font;
     font-weight: 700;
     color: $font-color-of-pictures;

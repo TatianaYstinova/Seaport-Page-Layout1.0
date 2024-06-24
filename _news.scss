@@ -1,4 +1,4 @@
-.news-container{
+.news-container {
     position: relative;
     width: 100%;
     height: 576px;
@@ -7,18 +7,21 @@
     background-color: #f7f2f2;
     padding: 150px 0;
 }
-.description-of-company-news-container{
+
+.description-of-company-news-container {
     position: relative;
-    width: 1296px;  
+    width: 1296px;
     height: 514px;
 }
-.header-and-jump-button{
+
+.header-and-jump-button {
     position: relative;
     width: 100%;
     height: 56px;
     display: flex;
     margin-left: 41px;
 }
+
 .header-company-news-container {
     width: 85%;
     height: 56px;
@@ -27,6 +30,7 @@
     font-size: 40px;
     line-height: 56px;
 }
+
 .all-news-button {
     width: 150px;
     height: 39px;
@@ -42,6 +46,7 @@
     align-items: center;
     text-decoration: none;
 }
+
 .news-card-container {
     position: relative;
     width: 700px;
@@ -50,7 +55,8 @@
     top: 60px;
     border-radius: 20px;
 }
-.newsletter{
+
+.newsletter {
     position: relative;
     width: 400px;
     height: 259px;
@@ -59,7 +65,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.news-date{
+
+.news-date {
     position: relative;
     font-family: $main-font;
     font-weight: 700;
@@ -67,17 +74,20 @@
     line-height: 22.4px;
     margin-top: 24px;
 }
-.text-news{
+
+.text-news {
     position: relative;
     margin-top: 24px;
 }
-.header-news{
+
+.header-news {
     font-family: $main-font;
     font-weight: 700;
     font-size: 20px;
     line-height: 26.4px;
 }
-.description-news{
+
+.description-news {
     font-family: $main-font;
     font-weight: 400;
     font-size: 16px;

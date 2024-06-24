@@ -1,17 +1,19 @@
-.footer-container{
+.footer-container {
     position: relative;
     width: 100%;
     display: flex;
     background-color: rgba(61, 52, 139, 1);
     justify-content: center;
 }
-.description-footer{
+
+.description-footer {
     position: relative;
-    width: 1296px;  
+    width: 1296px;
     display: flex;
     flex-direction: column;
 }
-.address-and-phone-number{
+
+.address-and-phone-number {
     background-color: rgba(61, 52, 139, 1);
     height: 110px;
     display: flex;
@@ -20,55 +22,59 @@
     justify-content: space-between;
     margin-top: 25px;
 }
-.addres{
+
+.addres {
     position: relative;
     display: flex;
-    gap:20px;
+    gap: 20px;
     align-items: center;
     font-family: $main-font;
     font-weight: 200;
     font-size: 20px;
     line-height: 56px;
-    color:white ;
+    color: white;
 }
-.logo-white{
+
+.logo-white {
     display: flex;
 }
 
-.info-about-the-legal-entity-procurement-shareholders-about-the-company{
+.info-about-the-legal-entity-procurement-shareholders-about-the-company {
     background-color: rgba(61, 52, 139, 1);
     display: flex;
     width: 100%;
-    
+
     justify-content: space-between;
     margin-top: 59px;
 }
+
 .header-legal-entity,
 .header-procurement,
 .header-shareholders,
-.header-about-the-company{
+.header-about-the-company {
     position: relative;
     width: 306px;
     font-family: $main-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 22.4px;
-    color:white ;
+    color: white;
     margin-top: 10px;
 }
-.text{
+
+.text {
     font-family: $main-font;
     font-weight: 400;
     font-size: 20px;
     line-height: 22.4px;
-    color:white ;
+    color: white;
     margin-top: 24px;
     text-decoration: none;
 }
 
 .procurement,
 .shareholders,
-.about-the-company{
+.about-the-company {
     display: flex;
     flex-direction: column;
 }

@@ -10,9 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.jump-link-container{
+
+.jump-link-container {
     position: relative;
     width: 100%;
     height: 68px;
@@ -21,89 +22,98 @@ body {
     background-color: rgb(163, 223, 223);
     align-items: center;
 }
-.enumeration-jump-link-container{
+
+.enumeration-jump-link-container {
     position: relative;
     width: 100%;
     display: flex;
     left: 192px;
     justify-content: flex-start;
-    white-space:pre;
+    white-space: pre;
 }
-.enumeration-jump-link{
+
+.enumeration-jump-link {
     position: relative;
     width: 677px;
-    gap:15px;
+    gap: 15px;
     height: 18px;
     display: flex;
 }
-.link{
+
+.link {
     text-decoration: none;
     font-family: $main-font;
     font-weight: 700;
     font-size: 13px;
     line-height: 18.2px;
-    color:$main-color-text;
-    text-transform:uppercase; 
+    color: $main-color-text;
+    text-transform: uppercase;
 }
-.requisition-form-container{
+
+.requisition-form-container {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    top:100px;
+    top: 100px;
 }
-.requisition-form
-{   position: relative;
+
+.requisition-form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.header-requisition-form{
+.header-requisition-form {
     width: 856px;
     font-family: $main-font;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
-    color:$main-color-text;
+    color: $main-color-text;
     text-align: center;
 }
-.data-entry-form{
+
+.data-entry-form {
     position: relative;
-    width:856px;
+    width: 856px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     top: 59px;
 }
-.form-field{
+
+.form-field {
     position: relative;
     width: 416px;
     height: 73px;
-    gap:20px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.header-form{
+
+.header-form {
     position: relative;
     font-family: $main-font;
     font-weight: 700;
     font-size: 13px;
     line-height: 18.2px;
-    color:$main-color-text;
-    text-transform:uppercase;
+    color: $main-color-text;
+    text-transform: uppercase;
 }
-.input-data-entry-form{
+
+.input-data-entry-form {
     width: 416px;
     height: 35px;
     padding: 0;
     box-sizing: content-box;
 }
 
-.drop-down-list{
+.drop-down-list {
     width: 416px;
     height: 35px;
     border-width: thin;
@@ -112,79 +122,86 @@ body {
     appearance: none;
 }
 
-.input-title{
-  height: 100px;
+.input-title {
+    height: 100px;
 }
 
-.select-a-file{
+.select-a-file {
     position: relative;
     width: 143px;
     height: 34px;
     padding: 8px 16px;
-    background-color:rgba(93, 183, 222, 1);
+    background-color: rgba(93, 183, 222, 1);
     border-radius: 20px;
     text-decoration: none;
-    color:$main-fill-color;
+    color: $main-fill-color;
     align-content: center;
     text-align: center;
     font-family: $main-font;
     font-weight: 700;
     font-size: 13px;
-    line-height:18,2px;
+    line-height: 18, 2px;
 }
 
-.additional-application-information{
+.additional-application-information {
     position: relative;
     display: flex;
     flex-direction: column;
     top: 114px;
-    width:856px;
+    width: 856px;
 }
+
 .header-additional-application,
-.header-feedback{
+.header-feedback {
     position: relative;
     font-family: $main-font;
     font-weight: 700;
     font-size: 27px;
-    line-height:37,8px;
-    color:$main-color-text;
+    line-height: 37, 8px;
+    color: $main-color-text;
 
 }
-.enumeration-additional-application-information{
+
+.enumeration-additional-application-information {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
     top: 36px;
 }
-.checkbox{
+
+.checkbox {
     position: relative;
     display: flex;
     gap: 10px;
-    
+
 }
-.checkbox-input{
+
+.checkbox-input {
     margin: 0;
     width: 20px;
     height: 20px;
 }
-.feedback{
+
+.feedback {
     position: relative;
     display: flex;
     flex-direction: column;
     top: 200px;
-    width:856px;
+    width: 856px;
 }
-.data-entry-form-feedback{
+
+.data-entry-form-feedback {
     position: relative;
-    width:416px;
+    width: 416px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     top: 59px;
 }
-.send-data{
+
+.send-data {
     width: 114px;
     gap: 15px;
     background: url("./img/Group 47 (1).png") no-repeat;
@@ -196,6 +213,6 @@ body {
     line-height: 22.4px;
     display: flex;
     align-items: center;
-    color:rgba(61, 52, 139, 1);
+    color: rgba(61, 52, 139, 1);
     height: 38px;
 }

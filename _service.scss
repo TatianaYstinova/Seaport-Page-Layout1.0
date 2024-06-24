@@ -1,58 +1,64 @@
-$color-service-font:rgb(7, 6, 6);
+$color-service-font: rgb(7, 6, 6);
 $main-font: "PT Sans", sans-serif;
-$font-color-of-service-description:rgba(61, 52, 139, 1);
+$font-color-of-service-description: rgba(61, 52, 139, 1);
 $main-fill-color: #fff;
 
-.service-description-container{
+.service-description-container {
     position: relative;
     width: 100%;
     padding: 150px 0;
 
 }
-.description-services-and-service-cards-container{
+
+.description-services-and-service-cards-container {
     position: relative;
     width: 1296px;
-    
+
 }
-.info-text-service-container{
+
+.info-text-service-container {
     display: flex;
     flex-direction: column;
 }
-.header-service{
+
+.header-service {
     width: 115px;
     height: 56px;
     font-family: $main-font;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
-    color:$color-service-font;
+    color: $color-service-font;
 }
-.frame-title-service-container{
+
+.frame-title-service-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 17px 0;
 }
-.title-service{
-    color:$font-color-of-service-description;
+
+.title-service {
+    color: $font-color-of-service-description;
     font-family: $main-font;
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
 }
+
 .png-file-link {
     background-color: #7fffd400;
-    background-position:right 0px top 40%;;
+    background-position: right 0px top 40%;
+    ;
     background-repeat: no-repeat;
 }
 
-.frame-content-big-container{
+.frame-content-big-container {
     position: relative;
-    width:416px;
-    height:223px;
+    width: 416px;
+    height: 223px;
     border-radius: 20px;
     background-color: rgba(61, 52, 139, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
