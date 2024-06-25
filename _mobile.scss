@@ -53,7 +53,9 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 
   .background {
     height: 1374px;
-    width: 1000px;
+   
+    object-fit: cover;
+    object-position: top left;
   }
 
   .info-text-container {
@@ -93,14 +95,13 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     top: 218px;
   }
 
+  $card-description-height: 40px;
   .text-of-frame-content {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    width: 100%;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    height: $card-description-height;
+  }
+
+  .shipment {
+    height: calc(100% - $card-description-height);
   }
 
   .service-description-container {
@@ -132,11 +133,7 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 
 @media (width > 900px) {
   body {
-    position: relative;
-    background-color: $main-fill-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   padding: 0 12px;
   }
 
   .info-container {
