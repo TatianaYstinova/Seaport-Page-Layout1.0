@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .company-information-and-rate-request-container {
@@ -349,208 +350,14 @@
   flex-direction: column;
 }
 
-@media (width <= 900px) {
-  body {
-    margin: 0;
-  }
-  .apex {
-    width: 100%;
-    height: 275px;
-  }
-  .info-container {
-    position: relative;
-    top: 40px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .logo {
-    width: 107px;
-    height: 33px;
-  }
-  .icon-burger-menu {
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    position: relative;
-    right: 27px;
-  }
-  .menu-navigation {
-    flex-direction: column;
-    position: absolute;
-    top: 52px;
-    right: 0;
-    transform: translateX(100%);
-    transform: translateX(0);
-    transition: all 0.6s ease;
-  }
-  .first-screen-container {
-    overflow: hidden;
-    display: flex;
-  }
-  .background {
-    height: 1374px;
-    width: 1000px;
-  }
-  .info-text-container {
-    position: relative;
-    top: 140px;
-  }
-  .header-text {
-    left: 10px;
-    width: 40px;
-  }
-  .subheading-text {
-    position: relative;
-    top: 164px;
-    left: 6px;
-    width: 313px;
-  }
-  .about-company-button {
-    position: relative;
-    top: 183px;
-  }
-  .types-services-container {
-    position: relative;
-    top: 128px;
-    flex-direction: column;
-  }
-  .frame-content {
-    margin: 10px;
-    width: 262px;
-    height: 162px;
-    top: 218px;
-  }
-  .text-of-frame-content {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    width: 100%;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-  }
-  .service-description-container {
-    display: flex;
-  }
-  .info-text-service-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .title-service {
-    width: 70%;
-  }
-  .frame-title-service-container {
-    flex-direction: column;
-  }
-  .types-services-container-big {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
+* {
+  box-sizing: border-box;
 }
-@media (width > 900px) {
-  body {
-    position: relative;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-container {
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1296px;
-  }
-  .burger-menu-button {
-    display: none !important;
-  }
-  .menu-navigation {
-    position: relative;
-    gap: 75px;
-  }
-  .burger-menu-900 {
-    position: absolute;
-    left: 810px;
-  }
-  .first-screen-container {
-    height: 750px;
-    display: flex;
-    justify-content: center;
-  }
-  .background {
-    height: 750px;
-  }
-  .text-of-company-and-types-of-services-container {
-    display: flex;
-    justify-content: center;
-  }
-  .info-text-container {
-    height: 336px;
-    margin-top: 180px;
-    left: 125px;
-  }
-  .header-text {
-    width: 526px;
-  }
-  .subheading-text {
-    margin-top: 30px;
-    width: 322px;
-  }
-  .about-company-button {
-    margin-top: 40px;
-  }
-  .types-services-container {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    left: 134px;
-    justify-content: center;
-  }
-  .frame-content {
-    width: 306px;
-    height: 250px;
-  }
-  .text-of-frame-content {
-    font-size: 19px;
-    line-height: 26.6px;
-    position: absolute;
-    transform: translateX(-50%);
-  }
-  .service-description-container {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-  }
-  .frame-title-service-container {
-    align-items: center;
-  }
-  .info-text-service-container {
-    width: 306px;
-    height: 333px;
-    display: flex;
-    flex-direction: column;
-  }
-  .description-services-and-service-cards-container {
-    display: flex;
-  }
-  .types-services-container-big {
-    width: 856px;
-    height: 717px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    left: 134px;
-  }
+
+body {
+  padding: 0 12px;
 }
+
 .apex {
   display: flex;
   justify-content: center;
@@ -684,11 +491,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .shipment {
-  border-radius: inherit;
-  height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -702,6 +508,207 @@
   text-align: center;
   width: 100%;
   background: rgb(33, 31, 31);
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width <= 900px) {
+  body {
+    margin: 0;
+  }
+  .apex {
+    width: 100%;
+    height: 275px;
+  }
+  .info-container {
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .logo {
+    width: 107px;
+    height: 33px;
+  }
+  .icon-burger-menu {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: relative;
+    right: 27px;
+  }
+  .menu-navigation {
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    transform: translateX(100%);
+    transform: translateX(0);
+    transition: all 0.6s ease;
+  }
+  .first-screen-container {
+    overflow: hidden;
+    display: flex;
+  }
+  .background {
+    height: 1374px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top left;
+       object-position: top left;
+  }
+  .info-text-container {
+    position: relative;
+    top: 140px;
+  }
+  .header-text {
+    left: 10px;
+    width: 40px;
+  }
+  .subheading-text {
+    position: relative;
+    top: 164px;
+    left: 6px;
+    width: 313px;
+  }
+  .about-company-button {
+    position: relative;
+    top: 183px;
+  }
+  .types-services-container {
+    position: relative;
+    top: 128px;
+    flex-direction: column;
+  }
+  .frame-content {
+    margin: 10px;
+    width: 262px;
+    height: 162px;
+    top: 218px;
+  }
+  .text-of-frame-content {
+    height: 40px;
+  }
+  .shipment {
+    height: calc(100% - 40px);
+  }
+  .service-description-container {
+    display: flex;
+  }
+  .info-text-service-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-service {
+    width: 70%;
+  }
+  .frame-title-service-container {
+    flex-direction: column;
+  }
+  .types-services-container-big {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+@media (width > 900px) {
+  body {
+    padding: 0 12px;
+  }
+  .info-container {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1296px;
+  }
+  .burger-menu-button {
+    display: none !important;
+  }
+  .menu-navigation {
+    position: relative;
+    gap: 75px;
+  }
+  .burger-menu-900 {
+    position: absolute;
+    left: 810px;
+  }
+  .first-screen-container {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+  }
+  .background {
+    height: 750px;
+  }
+  .text-of-company-and-types-of-services-container {
+    display: flex;
+    justify-content: center;
+  }
+  .info-text-container {
+    height: 336px;
+    margin-top: 180px;
+    left: 125px;
+  }
+  .header-text {
+    width: 526px;
+  }
+  .subheading-text {
+    margin-top: 30px;
+    width: 322px;
+  }
+  .about-company-button {
+    margin-top: 40px;
+  }
+  .types-services-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    left: 134px;
+    justify-content: center;
+  }
+  .frame-content {
+    width: 306px;
+    height: 250px;
+  }
+  .text-of-frame-content {
+    font-size: 19px;
+    line-height: 26.6px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .service-description-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .frame-title-service-container {
+    align-items: center;
+  }
+  .info-text-service-container {
+    width: 306px;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+  }
+  .description-services-and-service-cards-container {
+    display: flex;
+  }
+  .types-services-container-big {
+    width: 856px;
+    height: 717px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    left: 134px;
+  }
 }/*# sourceMappingURL=main.css.map */
