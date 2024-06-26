@@ -6,7 +6,7 @@ $main-fill-color: #fff;
 .service-description-container {
     position: relative;
     width: 100%;
-    padding: 150px 0;
+    padding: 76px 0;
 
 }
 
@@ -16,14 +16,8 @@ $main-fill-color: #fff;
 
 }
 
-.info-text-service-container {
-    display: flex;
-    flex-direction: column;
-}
 
 .header-service {
-    width: 115px;
-    height: 56px;
     font-family: $main-font;
     font-weight: 700;
     font-size: 40px;
@@ -48,13 +42,11 @@ $main-fill-color: #fff;
 .png-file-link {
     background-color: #7fffd400;
     background-position: right 0px top 40%;
-    ;
     background-repeat: no-repeat;
 }
 
 .frame-content-big-container {
     position: relative;
-    width: 416px;
     height: 223px;
     border-radius: 20px;
     background-color: rgba(61, 52, 139, 1);

@@ -53,7 +53,6 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
 
   .background {
     height: 1374px;
-   
     object-fit: cover;
     object-position: top left;
   }
@@ -96,6 +95,7 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   }
 
   $card-description-height: 40px;
+
   .text-of-frame-content {
     height: $card-description-height;
   }
@@ -129,11 +129,59 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     gap: 35px;
 
   }
+
+  .frame-content-big-container {
+    width: 320px;
+  }
+
+  .company-information-and-rate-request-container {
+    overflow: hidden;
+    flex-direction: column;
+
+  }
+
+  .company-description-and-rate-request-and-video {
+    flex-direction: column;
+  }
+
+  .info-text-company-description {
+    white-space: break-spaces;
+    box-sizing: border-box;
+    width: 279px;
+    overflow: hidden;
+
+  }
+
+  ol {
+    padding: 0 18px;
+    box-sizing: border-box;
+  }
+
+  .video {
+    width: 344px;
+    height: 275px;
+
+  }
+
+  .rate-request-container {
+    width: 339px;
+    height: 170px;
+    top: 25px;
+  }
+
+  .rate-request-header {
+    padding: 19px 38px;
+  }
+
+  .rate-request-description {
+    padding: 4px 36px;
+  }
+
 }
 
 @media (width > 900px) {
   body {
-   padding: 0 12px;
+    padding: 0 12px;
   }
 
   .info-container {
@@ -226,28 +274,68 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   }
 
   .info-text-service-container {
-    width: 306px;
-    height: 333px;
+    width: 50%;
     display: flex;
     flex-direction: column;
   }
 
   .description-services-and-service-cards-container {
-
     display: flex;
   }
 
   .types-services-container-big {
-    width: 856px;
-    height: 717px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 20px;
+
+  }
+
+  .frame-content-big-container {
+    width: 416px;
     position: relative;
+    height: 223px;
+    border-radius: 20px;
+    background-color: rgba(61, 52, 139, 1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    left: 134px;
+    justify-content: space-between;
+    overflow: hidden;
   }
+
+  .info-text-company-description {
+    width: 636px;
+  }
+
+  .video-and-rate-request-container {
+
+    left: 71px;
+  }
+
+  .video {
+    width: 526px;
+    height: 350px;
+  }
+
+  .rate-request-container {
+
+    width: 526px;
+    height: 170px;
+    top: 52px;
+  }
+
+  .rate-request-header {
+    height: 18px;
+    padding: 36px;
+  }
+
+  .rate-request-description {
+    margin-left: 72px;
+  }
+
+
+
+
 
 
 
