@@ -176,6 +176,36 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   .rate-request-description {
     padding: 4px 36px;
   }
+  .news-container{
+    overflow: hidden;
+  }
+
+  .description-of-company-news-container {
+    width: 100%;
+  }
+
+  .header-and-jump-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .all-news-button {
+    width: 172px;
+    background-position: right 53px top 53%;
+
+  }
+
+  .news-card-container {
+    flex-direction: column;
+    gap: 165px;
+
+  }
+  .description-news {
+    width: 82%;
+  }
 
 }
 
@@ -333,10 +363,36 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     margin-left: 72px;
   }
 
+  .news-container {
+    justify-content: center;
+    padding: 18px 0;
+  }
 
+  .description-of-company-news-container {
 
+    width: 1296px;
 
+  }
 
+  .header-and-jump-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 56px;
+  }
 
+  .header-company-news-container {
+    width: 85%;
+    height: 56px;
 
+  }
+
+  .all-news-button {
+    width: 150px;
+    height: 39px;
+    gap: 15px;
+    background-position: right 0px top 40%;
+
+  }
 }
