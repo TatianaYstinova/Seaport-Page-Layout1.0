@@ -218,16 +218,19 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     flex-direction: column;
     gap: 18px
   }
-  .phone-and-mail{
+
+  .phone-and-mail {
     width: 329px;
   }
+
   .info-about-the-legal-entity-procurement-shareholders-about-the-company {
     flex-direction: column;
   }
+
   .legal-entity-information,
   .procurement,
   .shareholders,
-  .about-the-company{
+  .about-the-company {
     padding: 0 0 40px;
 
   }
@@ -434,6 +437,7 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     justify-content: space-between;
 
   }
+
   .addres {
     gap: 20px;
   }
