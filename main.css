@@ -657,7 +657,7 @@ body {
   }
   .newsletter {
     left: 29px;
-    transition: opacity 6s ease-in-out;
+    display: none;
   }
   .active {
     display: block;
