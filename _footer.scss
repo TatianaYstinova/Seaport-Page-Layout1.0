@@ -4,29 +4,28 @@
     display: flex;
     background-color: rgba(61, 52, 139, 1);
     justify-content: center;
+    top: 200px;
 }
 
 .description-footer {
     position: relative;
-    width: 1296px;
     display: flex;
     flex-direction: column;
 }
 
 .address-and-phone-number {
     background-color: rgba(61, 52, 139, 1);
-    height: 110px;
+   
     display: flex;
-    width: 100%;
+    
     align-items: center;
-    justify-content: space-between;
+   
     margin-top: 25px;
 }
 
 .addres {
     position: relative;
     display: flex;
-    gap: 20px;
     align-items: center;
     font-family: $main-font;
     font-weight: 200;
@@ -43,7 +42,6 @@
     background-color: rgba(61, 52, 139, 1);
     display: flex;
     width: 100%;
-
     justify-content: space-between;
     margin-top: 59px;
 }

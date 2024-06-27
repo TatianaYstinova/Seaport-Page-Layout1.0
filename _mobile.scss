@@ -176,7 +176,8 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   .rate-request-description {
     padding: 4px 36px;
   }
-  .news-container{
+
+  .news-container {
     overflow: hidden;
   }
 
@@ -203,9 +204,34 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     gap: 165px;
 
   }
+
   .description-news {
     width: 82%;
   }
+
+  .description-footer {
+    width: 100%;
+
+  }
+
+  .address-and-phone-number {
+    flex-direction: column;
+    gap: 18px
+  }
+  .phone-and-mail{
+    width: 329px;
+  }
+  .info-about-the-legal-entity-procurement-shareholders-about-the-company {
+    flex-direction: column;
+  }
+  .legal-entity-information,
+  .procurement,
+  .shareholders,
+  .about-the-company{
+    padding: 0 0 40px;
+
+  }
+
 
 }
 
@@ -394,5 +420,21 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     gap: 15px;
     background-position: right 0px top 40%;
 
+  }
+
+  .description-footer {
+
+    width: 1296px;
+
+  }
+
+  .address-and-phone-number {
+    height: 110px;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+  .addres {
+    gap: 20px;
   }
 }

@@ -255,29 +255,25 @@
   display: flex;
   background-color: rgb(61, 52, 139);
   justify-content: center;
+  top: 200px;
 }
 
 .description-footer {
   position: relative;
-  width: 1296px;
   display: flex;
   flex-direction: column;
 }
 
 .address-and-phone-number {
   background-color: rgb(61, 52, 139);
-  height: 110px;
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-between;
   margin-top: 25px;
 }
 
 .addres {
   position: relative;
   display: flex;
-  gap: 20px;
   align-items: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 200;
@@ -654,6 +650,25 @@ body {
   .description-news {
     width: 82%;
   }
+  .description-footer {
+    width: 100%;
+  }
+  .address-and-phone-number {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .phone-and-mail {
+    width: 329px;
+  }
+  .info-about-the-legal-entity-procurement-shareholders-about-the-company {
+    flex-direction: column;
+  }
+  .legal-entity-information,
+  .procurement,
+  .shareholders,
+  .about-the-company {
+    padding: 0 0 40px;
+  }
 }
 @media (width > 900px) {
   body {
@@ -799,5 +814,16 @@ body {
     height: 39px;
     gap: 15px;
     background-position: right 0px top 40%;
+  }
+  .description-footer {
+    width: 1296px;
+  }
+  .address-and-phone-number {
+    height: 110px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .addres {
+    gap: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
