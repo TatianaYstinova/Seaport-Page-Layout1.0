@@ -331,6 +331,8 @@
 
 body {
   padding: 0 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .apex {
@@ -392,13 +394,18 @@ body {
 }
 
 .background {
+  position: absolute;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .text-of-company-and-types-of-services-container {
-  position: absolute;
+  position: relative;
   width: 1296px;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .info-text-container {
@@ -456,7 +463,8 @@ body {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .frame-content {
@@ -648,11 +656,12 @@ body {
     overflow: hidden;
   }
   .newsletter {
-    display: none;
+    left: 29px;
     transition: opacity 6s ease-in-out;
   }
   .active {
-    display: block; /* Показываю активную новость */
+    display: block;
+    /* Показываю активную новость */
   }
   .description-news {
     width: 82%;
@@ -681,11 +690,20 @@ body {
   .footer-container {
     top: 257px;
   }
-  .button-slider {
-    position: relative;
-    border: 3px solid red;
-    top: 58px;
-    width: 286px;
+  .button-slider-left {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    bottom: 145px;
+  }
+  .button-slider-right {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    right: 0;
+    bottom: 145px;
   }
 }
 @media (width > 900px) {
@@ -837,6 +855,7 @@ body {
     background-position: right 0px top 40%;
   }
   .description-footer {
+    background-color: rgb(61, 52, 139);
     width: 1296px;
   }
   .address-and-phone-number {
@@ -850,7 +869,10 @@ body {
   .footer-container {
     top: 200px;
   }
-  .button-slider {
+  .button-slider-left {
+    display: none !important;
+  }
+  .button-slider-right {
     display: none !important;
   }
 }/*# sourceMappingURL=main.css.map */

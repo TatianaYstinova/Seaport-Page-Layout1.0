@@ -18,6 +18,8 @@ $fram-color-service: rgba(93, 183, 222, 1);
 
 body {
     padding: 0 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .apex {
@@ -80,13 +82,18 @@ body {
 }
 
 .background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .text-of-company-and-types-of-services-container {
-    position: absolute;
+    position: relative;
     width: 1296px;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .info-text-container {
@@ -145,7 +152,7 @@ body {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    object-fit: cover
 }
 
 .frame-content {
