@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./calculatorPage.css";
 .service-description-container {
   position: relative;
@@ -200,9 +201,9 @@
   position: relative;
   width: 700px;
   display: flex;
-  gap: 18px;
   top: 60px;
   border-radius: 20px;
+  height: 417px;
 }
 
 .newsletter {
@@ -255,7 +256,6 @@
   display: flex;
   background-color: rgb(61, 52, 139);
   justify-content: center;
-  top: 200px;
 }
 
 .description-footer {
@@ -626,9 +626,6 @@ body {
   .rate-request-description {
     padding: 4px 36px;
   }
-  .news-container {
-    overflow: hidden;
-  }
   .description-of-company-news-container {
     width: 100%;
   }
@@ -646,6 +643,16 @@ body {
   .news-card-container {
     flex-direction: column;
     gap: 165px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .newsletter {
+    display: none;
+    transition: opacity 6s ease-in-out;
+  }
+  .active {
+    display: block; /* Показываю активную новость */
   }
   .description-news {
     width: 82%;
@@ -658,7 +665,9 @@ body {
     gap: 18px;
   }
   .phone-and-mail {
-    width: 329px;
+    width: 295px;
+    position: relative;
+    right: 26px;
   }
   .info-about-the-legal-entity-procurement-shareholders-about-the-company {
     flex-direction: column;
@@ -668,6 +677,15 @@ body {
   .shareholders,
   .about-the-company {
     padding: 0 0 40px;
+  }
+  .footer-container {
+    top: 257px;
+  }
+  .button-slider {
+    position: relative;
+    border: 3px solid red;
+    top: 58px;
+    width: 286px;
   }
 }
 @media (width > 900px) {
@@ -798,6 +816,9 @@ body {
   .description-of-company-news-container {
     width: 1296px;
   }
+  .news-card-container {
+    gap: 18px;
+  }
   .header-and-jump-button {
     position: relative;
     width: 100%;
@@ -825,5 +846,11 @@ body {
   }
   .addres {
     gap: 20px;
+  }
+  .footer-container {
+    top: 200px;
+  }
+  .button-slider {
+    display: none !important;
   }
 }/*# sourceMappingURL=main.css.map */
