@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./calculatorPage.css";
 .service-description-container {
   position: relative;
@@ -200,9 +201,9 @@
   position: relative;
   width: 700px;
   display: flex;
-  gap: 18px;
   top: 60px;
   border-radius: 20px;
+  height: 417px;
 }
 
 .newsletter {
@@ -255,7 +256,6 @@
   display: flex;
   background-color: rgb(61, 52, 139);
   justify-content: center;
-  top: 200px;
 }
 
 .description-footer {
@@ -331,6 +331,8 @@
 
 body {
   padding: 0 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .apex {
@@ -392,13 +394,18 @@ body {
 }
 
 .background {
+  position: absolute;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .text-of-company-and-types-of-services-container {
-  position: absolute;
+  position: relative;
   width: 1296px;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .info-text-container {
@@ -456,7 +463,8 @@ body {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .frame-content {
@@ -626,9 +634,6 @@ body {
   .rate-request-description {
     padding: 4px 36px;
   }
-  .news-container {
-    overflow: hidden;
-  }
   .description-of-company-news-container {
     width: 100%;
   }
@@ -646,6 +651,17 @@ body {
   .news-card-container {
     flex-direction: column;
     gap: 165px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .newsletter {
+    left: 29px;
+    display: none;
+  }
+  .active {
+    display: block;
+    /* Показываю активную новость */
   }
   .description-news {
     width: 82%;
@@ -658,7 +674,9 @@ body {
     gap: 18px;
   }
   .phone-and-mail {
-    width: 329px;
+    width: 295px;
+    position: relative;
+    right: 26px;
   }
   .info-about-the-legal-entity-procurement-shareholders-about-the-company {
     flex-direction: column;
@@ -668,6 +686,24 @@ body {
   .shareholders,
   .about-the-company {
     padding: 0 0 40px;
+  }
+  .footer-container {
+    top: 257px;
+  }
+  .button-slider-left {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    bottom: 145px;
+  }
+  .button-slider-right {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    right: 0;
+    bottom: 145px;
   }
 }
 @media (width > 900px) {
@@ -798,6 +834,9 @@ body {
   .description-of-company-news-container {
     width: 1296px;
   }
+  .news-card-container {
+    gap: 18px;
+  }
   .header-and-jump-button {
     position: relative;
     width: 100%;
@@ -816,6 +855,7 @@ body {
     background-position: right 0px top 40%;
   }
   .description-footer {
+    background-color: rgb(61, 52, 139);
     width: 1296px;
   }
   .address-and-phone-number {
@@ -825,5 +865,14 @@ body {
   }
   .addres {
     gap: 20px;
+  }
+  .footer-container {
+    top: 200px;
+  }
+  .button-slider-left {
+    display: none !important;
+  }
+  .button-slider-right {
+    display: none !important;
   }
 }/*# sourceMappingURL=main.css.map */

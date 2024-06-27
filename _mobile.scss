@@ -177,9 +177,7 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     padding: 4px 36px;
   }
 
-  .news-container {
-    overflow: hidden;
-  }
+
 
   .description-of-company-news-container {
     width: 100%;
@@ -202,7 +200,20 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   .news-card-container {
     flex-direction: column;
     gap: 165px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 
+  }
+
+  .newsletter {
+    left: 29px;
+    display: none;
+  }
+
+  .active {
+    display: block;
+    /* Показываю активную новость */
   }
 
   .description-news {
@@ -220,7 +231,9 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   }
 
   .phone-and-mail {
-    width: 329px;
+    width: 295px;
+    position: relative;
+    right: 26px;
   }
 
   .info-about-the-legal-entity-procurement-shareholders-about-the-company {
@@ -232,6 +245,28 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   .shareholders,
   .about-the-company {
     padding: 0 0 40px;
+
+  }
+
+  .footer-container {
+    top: 257px;
+  }
+
+  .button-slider-left {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    bottom: 145px;
+  }
+
+  .button-slider-right {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 246px;
+    right: 0;
+    bottom: 145px;
 
   }
 
@@ -398,9 +433,11 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   }
 
   .description-of-company-news-container {
-
     width: 1296px;
+  }
 
+  .news-card-container {
+    gap: 18px;
   }
 
   .header-and-jump-button {
@@ -426,7 +463,7 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   }
 
   .description-footer {
-
+    background-color: rgb(61, 52, 139);
     width: 1296px;
 
   }
@@ -441,4 +478,18 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
   .addres {
     gap: 20px;
   }
+
+  .footer-container {
+    top: 200px
+  }
+
+  .button-slider-left {
+    display: none !important;
+  }
+
+  .button-slider-right {
+    display: none !important;
+  }
+
+
 }
