@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Морской порт версия 1.0</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -18,8 +23,8 @@
     <div class="apex">
         <div class='info-container'>
             <img class="logo" src="./img/Vectorlogo.png" alt="picture-logo" />
-            <button type="button" class=" burger-menu-900 icon-burger-menu burger-menu-button">
-                <img class="icon-burger-menu" src="./img/menu-svgrepo-com.svg" alt="menu" />
+            <button type="button" onclick="toggleMenu()" class=" burger-menu-900 icon-burger-menu burger-menu-button">
+                <img class="icon-burger-menu" id="burger-menu-button" src="./img/menu-svgrepo-com.svg" alt="menu" />
             </button>
             <div class="menu-navigation">
                 <a class="enumeration-menu-navigation" href="">О компании</a>
@@ -165,7 +170,7 @@
                 <a class="all-news-button" href="">все новости</a>
             </div>
             <div  id="slider" class="news-card-container">
-                <div class="newsletter active">
+                <div class="newsletter">
                     <img  class='img-news' src="./img/новость1.png"/>
                     <div class="news-date">01/06/2024</div>
                     <div class="text-news">
@@ -198,8 +203,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button-slider-left" id="prev">Previous</button>
-            <button class="button-slider-right"id="next">Next</button>
+            
         </div>
     </div>
     <div class="footer-container">

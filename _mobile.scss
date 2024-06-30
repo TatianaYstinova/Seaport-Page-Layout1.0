@@ -40,10 +40,13 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     flex-direction: column;
     position: absolute;
     top: 52px;
-    right: 0;
+    right:-12px;
     transform: translateX(100%);
-    transform: translateX(0);
     transition: all .6s ease;
+
+    &.opend{
+      transform: translateX(0);
+    }
   }
 
   .first-screen-container {

@@ -1,4 +1,4 @@
-let previousButton = document.querySelector('#prev');
+/* let previousButton = document.querySelector('#prev');
 let nextButton = document.querySelector('#next');
 let newsCardContainer = document.querySelector('.news-card-container');
 
@@ -32,6 +32,13 @@ function backToTheBeginning1() {
 previousButton.addEventListener('click', backToTheBeginning);
 
 // Обработчик клика на кнопку "Следующая"
-nextButton.addEventListener('click', backToTheBeginning1);
+nextButton.addEventListener('click', backToTheBeginning1); */
 
-updateSlider();
+
+
+const burgerMenu= document.querySelector('#burger-menu-button');
+const menuNavigationEnumeration = document.querySelector('.menu-navigation')
+
+function toggleMenu(){
+    menuNavigationEnumeration.classList.toggle('opend')
+}
