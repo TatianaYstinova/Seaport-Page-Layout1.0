@@ -47,11 +47,15 @@ $font-color-of-pictures: rgba(255, 255, 255, 1);
     &.opend{
       transform: translateX(0);
     }
+    &.close{
+      transform: translateX(100%);
+    }
   }
 
   .first-screen-container {
     overflow: hidden;
     display: flex;
+    height: 87pc;
   }
 
   .background {

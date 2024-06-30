@@ -535,9 +535,13 @@ body {
   .menu-navigation.opend {
     transform: translateX(0);
   }
+  .menu-navigation.close {
+    transform: translateX(100%);
+  }
   .first-screen-container {
     overflow: hidden;
     display: flex;
+    height: 87pc;
   }
   .background {
     height: 1374px;

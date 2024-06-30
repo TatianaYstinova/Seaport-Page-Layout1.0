@@ -36,9 +36,19 @@ nextButton.addEventListener('click', backToTheBeginning1); */
 
 
 
-const burgerMenu= document.querySelector('#burger-menu-button');
+const burgerMenu = document.querySelector('#burger-menu-button');
 const menuNavigationEnumeration = document.querySelector('.menu-navigation')
 
-function toggleMenu(){
-    menuNavigationEnumeration.classList.toggle('opend')
+function openMenu() {
+    menuNavigationEnumeration.classList.toggle('opend');
 }
+function closeMenu() {
+    if (menuNavigationEnumeration.classList.contains('opend')) {
+        menuNavigationEnumeration.classList.remove('opend')
+    }
+}
+document.addEventListener('click', function (event) {
+    if (!event.target.closest('#burger-menu-button')) {
+        closeMenu();
+    }
+})
