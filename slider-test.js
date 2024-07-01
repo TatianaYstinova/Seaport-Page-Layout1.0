@@ -1,5 +1,4 @@
 
-
 const newCards = [
     {
         picture: 'https://i.1.creatium.io/14/59/2d/7a1c484a5de50e5c436b26554e2ad9cb70/nastol.com_.ua-223487.jpg',
@@ -32,25 +31,26 @@ const newCards = [
 ];
 
 
-var slider = tns({
-  container: '.my-slider',
-  items: 3,
-  slideBy: 'page',
-  autoplay: true
-});
 
 const newsCardContainer = document.querySelector('.news-card-container');
-for (let i=0;i<newCards.length;i++) {
+for (let i = 0; i < newCards.length; i++) {
     const newDiv = document.createElement('div');
     newsCardContainer.appendChild(newDiv);
     newDiv.outerHTML = `
-        <div class="news-card">
-        <img  class='img-news' src="${newCards[i].picture}"/>
-        <div class="news-date">${newCards[i].data}</div>
-        <div class="header-news">${newCards[i].headerNews}</div>
-        <div class="description-news">${newCards[i].descriptionNews}</div>
-        </div>
-        `
-    
-}    
+    <div class="news-card">
+    <img  class='img-news' src="${newCards[i].picture}"/>
+    <div class="news-date">${newCards[i].data}</div>
+    <div class="header-news">${newCards[i].headerNews}</div>
+    <div class="description-news">${newCards[i].descriptionNews}</div>
+    </div>
+    `
 
+}
+setTimeout(() => {
+    var slider = tns({
+        container: '.my-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true
+    });
+}, 1000)
