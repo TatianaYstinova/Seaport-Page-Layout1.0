@@ -661,8 +661,6 @@ body {
     background-position: right 53px top 53%;
   }
   .news-card-container {
-    flex-direction: column;
-    gap: 165px;
     width: 100%;
     margin: auto;
     overflow: hidden;

@@ -1,3 +1,5 @@
+
+
 const newCards = [
     {
         picture: 'https://i.1.creatium.io/14/59/2d/7a1c484a5de50e5c436b26554e2ad9cb70/nastol.com_.ua-223487.jpg',
@@ -29,6 +31,14 @@ const newCards = [
     }
 ];
 
+
+var slider = tns({
+  container: '.my-slider',
+  items: 3,
+  slideBy: 'page',
+  autoplay: true
+});
+
 const newsCardContainer = document.querySelector('.news-card-container');
 for (let i=0;i<newCards.length;i++) {
     const newDiv = document.createElement('div');
@@ -43,8 +53,4 @@ for (let i=0;i<newCards.length;i++) {
         `
     
 }    
-$(document).ready(function(){
-    $('.news-card-container').slick({
-      setting-name: setting-value
-    });
-  });
+
