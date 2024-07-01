@@ -643,6 +643,12 @@ body {
   .description-of-company-news-container {
     width: 100%;
   }
+  .news-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
   .header-and-jump-button {
     position: relative;
     width: 100%;
@@ -663,7 +669,6 @@ body {
   }
   .newsletter {
     left: 29px;
-    display: none;
   }
   .active {
     display: block;
