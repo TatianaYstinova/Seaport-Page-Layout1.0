@@ -46,11 +46,3 @@ for (let i = 0; i < newCards.length; i++) {
     `
 
 }
-setTimeout(() => {
-    var slider = tns({
-        container: '.my-slider',
-        items: 1,
-        slideBy: 'page',
-        autoplay: true
-    });
-}, 1000)
